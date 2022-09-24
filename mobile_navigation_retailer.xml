@@ -2,19 +2,14 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
+    android:id="@+id/mobile_navigation_retailer"
     app:startDestination="@+id/nav_categories">
 
     <fragment
         android:id="@+id/nav_cart"
         android:name="com.example.food_app.ui.Cart.CartFragment"
-        android:label="Cart"
+        android:label="Delete Product"
         tools:layout="@layout/cart_fragment" />
-    <fragment
-        android:id="@+id/nav_settings"
-        android:name="com.example.food_app.ui.Settings.SettingsFragment"
-        android:label="@string/settings"
-        tools:layout="@layout/settings_fragment" />
 
     <fragment
         android:id="@+id/nav_logout"
@@ -24,12 +19,25 @@
     <fragment
         android:id="@+id/nav_orders"
         android:name="com.example.food_app.ui.Orders.OrdersFragment"
-        android:label="@string/orders"
+        android:label="Check New Orders"
         tools:layout="@layout/orders_fragment" />
 
     <fragment
         android:id="@+id/nav_categories"
         android:name="com.example.food_app.ui.Categories.CategoriesFragment"
-        android:label="Home"
+        android:label="Add New Product"
         tools:layout="@layout/categories_fragment" />
+
+    <fragment
+        android:id="@+id/nav_cart_retailers"
+        android:name="com.example.food_app.ui.Categories.CategoriesFragment"
+        android:label="Cart"
+        tools:layout="@layout/categories_fragment" />
+
+    <fragment
+        android:id="@+id/nav_orders_retailers"
+        android:name="com.example.food_app.ui.Categories.CategoriesFragment"
+        android:label="Orders"
+        tools:layout="@layout/categories_fragment" />
+
 </navigation>
